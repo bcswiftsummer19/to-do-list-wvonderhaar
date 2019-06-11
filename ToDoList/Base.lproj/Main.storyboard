@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="HMd-QM-f5T">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="HMd-QM-f5T">
                                         <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HMd-QM-f5T" id="Qgo-lA-xhg">
@@ -88,13 +88,18 @@
                                 <action selector="cancelPressed:" destination="Nti-hb-AMZ" id="iap-EE-UjV"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LG7-CE-Igj"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="LG7-CE-Igj">
+                            <connections>
+                                <segue destination="ak1-2Z-hLM" kind="unwind" identifier="UnwindFromSave" unwindAction="unwindFromDetailViewControllerWithSegue:" id="1LP-tn-pv1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="toDoField" destination="6uq-fL-PSU" id="LcY-22-eEm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z4L-Dg-rJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ak1-2Z-hLM" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3127" y="126"/>
         </scene>
