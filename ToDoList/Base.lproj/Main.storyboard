@@ -98,7 +98,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
-                                    <action selector="toDoFieldChange:" destination="Nti-hb-AMZ" eventType="editingDidEnd" id="x9I-39-vnj"/>
+                                    <action selector="toDoFieldChange:" destination="Nti-hb-AMZ" eventType="editingChanged" id="UhQ-OP-tL4"/>
                                 </connections>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XXz-8e-VKa">
